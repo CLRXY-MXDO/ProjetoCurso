@@ -36,7 +36,7 @@ a:hover {
   color: #20a852;
 }
 
-.botao {
+.buttonHeader {
   background-color: #21C05C;
   color: white;
   padding: 12px 24px;
@@ -45,12 +45,12 @@ a:hover {
   font-weight: 500;
   cursor: pointer;
 }
-.botao:hover {
+.buttonHeader:hover {
   background-color: #20a852;
   color: white;
 }
 
-.linha-divisoria {
+.dividingLine {
   border: 1px solid #B4AEAE;
   margin-left: 2;
   margin-right: 2%;
@@ -86,7 +86,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.parag {
+.paragH1 {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #1f2937;
@@ -95,12 +95,14 @@ h1 {
 }
 
 .btngh {
-  display: flex;
   gap: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -195,9 +197,159 @@ h2 {
   font-size: 2.5rem;
   font-weight: 800;
   margin: 0;
+  color: #1F2937;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 p {
   font-size: 1.1rem;
   margin: 0;
+  color: #1F2937;
+}
+
+.donatorsRecipients {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 20px;
+}
+
+.boxDonatorsRecipients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 491px;
+  height: 481px;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px #e5e7eb;
+  color: #16A34A;
+}
+
+.boxLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.boxLogo h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.boxDonatorsRecipients p {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.boxDonatorsRecipients ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boxDonatorsRecipients li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 18px;
+  color: #4b5563;
+  line-height: 1.4;
+}
+.boxDonatorsRecipients li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.boxDonatorsRecipients li strong {
+  display: block;
+  color: #09090B;
+}
+
+.blue h3 {
+  color: #3b82f6;
+}
+.blue li::before {
+  background-color: #3b82f6;
+}
+
+.boxList li {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.products {
+  background-color: #F3F5F8;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 200px;
+}
+
+.productsTitle {
+  align-items: center;
+  margin: 10px;
+  color: #1F2937;
+  gap: 10px;
+}
+.productsTitle h3 {
+  font-weight: 400;
+  color: #1F2937;
+}
+
+.productsItems {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+
+.productsItems div {
+  background-color: white;
+  border: 2px solid #16A34A;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 0 2px #16A34A;
+}
+
+.productsItems h4 {
+  font-weight: 600;
+  text-align: center;
+  color: #09090B;
+}
+
+.productsItems div p {
+  text-align: center;
+  color: #4B5563;
+}
+
+.productsItems button {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #16A34A;
+  border: 1px solid #21C05C;
+  border-radius: 5px;
+  width: 150px;
+  height: 37px;
+  color: white;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-top: 12px;
+}
+.productsItems button:hover {
+  background-color: #21C05C;
 }/*# sourceMappingURL=style.css.map */
